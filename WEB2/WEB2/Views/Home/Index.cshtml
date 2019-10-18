@@ -1,0 +1,423 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_HomeUser.cshtml";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="css/animate.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+
+
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+<link href="~/css/aos.css" rel="stylesheet" />
+
+
+<link href="~/css/StyleH.css" rel="stylesheet" />
+
+
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+
+    <div class="site-navbar-wrap js-site-navbar bg-white">
+
+        <div class="container">
+            <div class="site-navbar bg-light">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <h2 class="mb-0 site-logo"><a href="@Url.Action("Index","Home")" class="font-weight-bold" style="font-size:40px">Phát đạt</a></h2>
+                    </div>
+                    <div class="col-10">
+                        <nav class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                    <li class="active" style="font-family:Tahoma"><a href="@Url.Action("Index","Home")" style="font-family:Tahoma; color:#fd7e14 !important">Trang Chủ</a></li>
+                                    <li><a id="homeid" href="@Url.Action("Index","GioiThieu")" style=" font-family:Tahoma">Giới thiệu</a></li>
+
+                                    <li class="has-children">
+                                        <a href="@Url.Action("Index","DichVu")" style="font-family:Tahoma">Dịch Vụ</a>
+                                        <ul class="dropdown arrow-top">
+                                            <li><a href="#">Thuê xe công trình</a></li>
+                                            @*<li><a href="#">Auto Insurance</a></li>
+                                                <li><a href="#">Travel Insurance</a></li>*@
+                                            <li class="has-children">
+                                                <a href="#">Loại xe</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="insurance.html">Home Insurance</a></li>
+                                                    <li><a href="insurance.html">Auto Insurance</a></li>
+                                                    <li><a href="insurance.html">Travel Insurance</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="@Url.Action("Index","ThongTin")" style="font-family:Tahoma">blog</a></li>
+                                    @*<li><a href="@Url.Action("Index","LienHe")">Liên hệ</a></li>*@
+                                    <li><a href="@Url.Action("Index","LienHe")" style="font-family:Tahoma"><span class="d-inline-block p-3 bg-primary text-white btn btn-primary">Liên hệ Ngay</span></a></li>
+
+
+                                    @*<li class="has-children">
+                                            <a id="btndangnhap" href="@Url.Action("Index","DichVu")" style="font-family:Tahoma ">Đăng nhập</a>
+                                            <ul class="dropdown arrow-top">
+                                                <div id="fb-root"></div>
+
+                                                <div class="fb-login-button" data-size="large" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="false"></div>
+
+                                            </ul>
+                                        </li>*@
+                                    <li class="has-children">
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="slide-one-item home-slider owl-carousel">
+
+        <div class="site-blocks-cover inner-page overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6" data-aos="fade">
+                        <h1 class="font-secondary font-weight-bold text-uppercase" style="font-family:Tahoma">Công ty xây dựng phát đạt</h1>
+                        <span class="caption d-block text-white" style="font-family:Tahoma">Chuyên cho thuê các loại xe công trình</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-blocks-cover inner-page overlay" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-7 text-center" data-aos="fade">
+                        <h1 class="font-secondary font-weight-bold text-uppercase" style="font-family:Tahoma">Đảm bảo uy tính và chất lượng</h1>
+                        <span class="caption d-block text-white" style="font-family:Tahoma"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <span class="caption d-block mb-2 font-secondary font-weight-bold">Sản phẩm &amp; dịch vụ</span>
+                    <h2 class="site-section-heading text-uppercase text-center font-secondary">Dịch vụ cho thuê xe công trình uy tính</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 block-13 nav-direction-white">
+                    <div class="nonloop-block-13 owl-carousel">
+                        <div class="media-image">
+                            <img src="images/xenang.jpg" alt="Image" class="img-fluid">
+                            <div class="media-image-body">
+                                <h2 class="font-secondary text-uppercase">xe nâng</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                <p><a href="#" class="btn btn-primary text-white px-4"><span class="caption">Xem thêm</span></a></p>
+                            </div>
+                        </div>
+                        <div class="media-image">
+                            <img src="images/xe/xecuoc1.jpg" alt="Image" class="img-fluid">
+                            <div class="media-image-body">
+                                <h2 class="font-secondary text-uppercase">xe cuốc</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                <p><a href="#" class="btn btn-primary text-white px-4"><span class="caption">Xem thêm</span></a></p>
+                            </div>
+                        </div>
+                        <div class="media-image">
+                            <img src="~/images/xe/1-CA2500-e1363887748138.jpg" class="img-fluid" />
+                            <div class="media-image-body">
+                                <h2 class="font-secondary text-uppercase">Xe lu</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                <p><a href="#" class="btn btn-primary text-white px-4"><span class="caption">Xem thêm</span></a></p>
+                            </div>
+                        </div>
+                        <div class="media-image">
+                            <img src="~/images/xecau1.jpg" class="img-fluid" />
+                            <div class="media-image-body">
+                                <h2 class="font-secondary text-uppercase">Xe cẩu</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                <p><a href="#" class="btn btn-primary text-white px-4"><span class="caption">Xem thêm</span></a></p>
+                            </div>
+                        </div>
+                        @*<div class="media-image">
+                                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                                <div class="media-image-body">
+                                    <h2 class="font-secondary text-uppercase">Auto Insurance</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                    <p><a href="#" class="btn btn-primary text-white px-4"><span class="caption">Xem thêm</span></a></p>
+                                </div>
+                            </div>*@
+                        <div class="media-image">
+                            <img src="images/xe/xeui1.jpg" alt="Image" class="img-fluid">
+                            <div class="media-image-body">
+                                <h2 class="font-secondary text-uppercase">xe ủi</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                <p><a href="#" class="btn btn-primary text-white px-4"><span class="caption">Xem thêm</span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="site-half">
+        <div class="img-bg-1" style="background-image: url('images/hero_bg_2.jpg');"></div>
+        <div class="container">
+            <div class="row no-gutters align-items-stretch">
+                <div class="col-md-5 ml-md-auto py-5">
+                    <span class="caption d-block mb-2 font-secondary font-weight-bold">Dịch vụ cho thuê xe công trình</span>
+                    <h2 class="site-section-heading text-uppercase font-secondary mb-5">Chọn chúng tôi</h2>
+                    <p>Hoạt động trong lĩnh vực nâng chuyển, bốc dỡ hàng hóa, máy móc công nghiệp nặng, lên xuống Container, cho thuê xe cẩu. Dịch vụ nhận cẩu hàng hóa với đội ngũ nhân viên kinh nghiệp nhiệt tình luôn sẵng sàng phục vụ Quý khách hàng.</p>
+
+                    <p>
+                        Chịu trách nhiệm bảo quảnh hàng hóa Khách hàng khi vận chuyển.
+
+                        Nhận, giao đúng đại điểm theo yêu cầu khách hàng với thời gian chính xác.
+
+                        Cam kết đúng thời gian vận chuyển với giá thành rẻ nhất.
+
+                        Cam kết đúng giá theo theo hợp đồng thỏa thuận. Không phát sinh thêm chi phí.
+
+                        Đội xe cẩu với nhiều loại tải trọng từ 2 tấn đến 20 Tấn đáp ứng tối đa nhu cầu tải cẩu.
+                        Công ty cổ phần Xây lắp phát triển nhà Đà Nẵng tiền thân là xí nghiệp công trình giao thông và xây dựng. Qua thời gian từ khi thành lập đến nay đã khẳng định được chổ đứng của mình trong lĩnh vực xây dựng cơ sở hạ tầng đô thị.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-half">
+        <div class="img-bg-1 right" style="background-image: url('images/hero_bg_1.jpg');"></div>
+        <div class="container">
+            <div class="row no-gutters align-items-stretch">
+                <div class="col-md-5 mr-md-auto py-5">
+                    <span class="caption d-block mb-2 font-secondary font-weight-bold">Dịch vụ cho thuê xe công trình</span>
+                    <h2 class="site-section-heading text-uppercase font-secondary mb-5">Chọn chúng tôi</h2>
+                    <p> Công ty cổ phần Xây lắp phát triển nhà Đà Nẵng tiền thân là xí nghiệp công trình giao thông và xây dựng. Qua thời gian từ khi thành lập đến nay đã khẳng định được chổ đứng của mình trong lĩnh vực xây dựng cơ sở hạ tầng đô thị.</p>
+                    <p>Giấy chứng nhận đăng ký kinh doanh Công ty Cổ phần số 3203002046 được chứng nhận bởi Trưởng phòng Sở kế hoạch Đầu tư Thành phố Đà Nẵng ký ngày 02 tháng 05 năm 2008</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="site-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-12 text-center">
+                    <br />
+                    <span class="caption d-block mb-2 font-secondary font-weight-bold">Dịch vụ cho thuê xe công trình</span>
+                    <h2 class="site-section-heading text-uppercase text-center font-secondary">Chọn chúng tôi</h2>
+                </div>
+            </div>
+            <div class="row border-responsive">
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right">
+                    <div class="text-center">
+                        <span class="flaticon-customer-service display-4 d-block mb-3 text-primary"></span>
+                        <h3 class="text-uppercase h4 mb-3">hỗ trợ 24/7</h3>
+                        <p>Công ty xây dựng phát đạt luôn đảm bảo hỗ trợ mọi nơi mọi l</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right">
+                    <div class="text-center">
+                        <span class="flaticon-group display-4 d-block mb-3 text-primary"></span>
+                        <h3 class="text-uppercase h4 mb-3">Sự tin tưởng</h3>
+                        <p>Công ty xây dựng phát đạt luôn đặt sự uy tín lên hàng đầu</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right">
+                    <div class="text-center">
+                        <span class="flaticon-medal display-4 d-block mb-3 text-primary"></span>
+                        <h3 class="text-uppercase h4 mb-3">10 năm kinh nghiệm</h3>
+                        <p>Với hơn 10 năm kinh nghiệm và đội ngũ công tác hoàn thiện</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="text-center">
+                        <span class="flaticon-agreement display-4 d-block mb-3 text-primary"></span>
+                        <h3 class="text-uppercase h4 mb-3">tham gia với chúng tôi</h3>
+                        <p>chúng tôi cam kết sẽ là một đối tác uy tính và tốt nhất của bạn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="site-section block-14 bg-light nav-direction-white">
+
+        <div class="container">
+
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <h2 class="site-section-heading text-center text-uppercase">Testimonies</h2>
+                </div>
+            </div>
+
+            <div class="nonloop-block-14 owl-carousel">
+
+                <div class="p-5">
+                    <div class="d-block block-testimony w-75 mx-auto text-center">
+                        <div class="person w-25 mx-auto mb-4">
+                            <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </div>
+                        <div>
+                            <h2 class="h5 mb-4">Katie Johnson</h2>
+                            <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="d-block block-testimony w-75 mx-auto text-center">
+                        <div class="person w-25 mx-auto mb-4">
+                            <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </div>
+                        <div>
+                            <h2 class="h5 mb-4">Jun Mars</h2>
+                            <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="d-block block-testimony w-75 mx-auto text-center">
+                        <div class="person w-25 mx-auto mb-4">
+                            <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </div>
+                        <div>
+                            <h2 class="h5 mb-4">Shane Holmes</h2>
+                            <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="d-block block-testimony w-75 mx-auto text-center">
+                        <div class="person w-25 mx-auto mb-4">
+                            <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </div>
+                        <div>
+                            <h2 class="h5 mb-4">Mark Johnson</h2>
+                            <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!&rdquo;</blockquote>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="py-5 bg-primary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <h2 class="text-uppercase text-white mb-0">DỊCH VỤ CUNG CẤP XE CÔNG TRÌNH</h2>
+                </div>
+                <div class="col-md-3 ml-auto text-center text-md-left">
+                    <a href="#" class="btn btn-bg-primary d-inline-block d-md-block font-secondary text-uppercase">liên hệ với chúng tôi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="footer-heading mb-4 text-white" style="font-family:Tahoma">Mô tả</h3>
+                    <p style="font-family:Tahoma">Công ty xây dựng phát đạt chuyên cung cấp các dịch vu cho thuê xe công trình và dịch vụ xây dựng</p>
+                    <p><a href="@Url.Action("Index","GioiThieu")" class="btn btn-primary rounded text-white px-4">Xem Thêm</a></p>
+                </div>
+                <div class="col-md-5 ml-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                                <li><a href="@Url.Action("Index","GioiThieu")">Giới thiệu</a></li>
+                                <li><a href="@Url.Action("Index","DichVu")">Dịch Vụ</a></li>
+                                <li><a href="@Url.Action("Index","ThongTin")">Thông tin</a></li>
+                                <li><a href="@Url.Action("Index","LienHe")">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="footer-heading mb-4 text-white">Thông tin liên hệ</h3>
+                            <ul class="list-unstyled">
+                                <li>Địa chỉ: <br />số 20, đường Lý Thường kiệt, TT.Phú Mỹ, H.Tân Thành, T.Bà Rịa Vũng Tàu</li>
+                                <li>số điện thoại:<br /> +84 961195696</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                    <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>
+                    <div class="col-md-12">
+                        <p>
+                            <a href="https://www.facebook.com/profile.php?id=100004304823807" target="_blank" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                            <a href="https://twitter.com/?lang=vi" target="_blank" class="p-2"><span class="icon-twitter"></span></a>
+                            <a href="https://www.instagram.com/cuogcuong11/" target="_blank" class="p-2"><span class="icon-instagram"></span></a>
+                            @*<a href="#" class="p-2"><span class="icon-vimeo"></span></a>*@
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="~/js/aos.js"></script>
+<script src="~/js/bootstrap-datepicker.min.js"></script>
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="~/js/jquery-ui.js"></script>
+<script src="~/js/jquery.countdown.min.js"></script>
+<script src="~/js/jquery.magnific-popup.min.js"></script>
+<script src="~/js/jquery.stellar.min.js"></script>
+<script src="~/js/main.js"></script>
+<script src="~/js/owl.carousel.min.js"></script>
+<script src="~/js/mediaelement-and-player.min.js"></script>
+<script src="~/js/popper.min.js"></script>
+<script src="~/js/slick.min.js"></script>
